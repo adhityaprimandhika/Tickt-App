@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">TIX</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="now_playing_detail">Easier to know what movies you can watch</string>
+    <string name="btn_next">NEXT</string>
+    <string name="btn_skip">SKIP</string>
+    <string name="btn_get_started">GET STARTED</string>
+    <string name="pre_sale_detail">Book your favorite movie earlier</string>
+    <string name="cashless_detail">You don’t worry to do transaction</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_create_account">CREATE NEW ACCOUNT</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="name">Name</string>
+    <string name="email">Email</string>
+    <string name="btn_sign_up">SIGN UP NOW</string>
+    <string name="add_photo">Add Photo</string>
+    <string name="save_and_next"><![CDATA[SAVE & NEXT]]></string>
+</resources>
