@@ -41,11 +41,25 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
         android:layout_marginTop="50dp"
-        android:text="Welcome\nAdhitya Primandhika"
-        android:textSize="21sp"
+        android:text="@string/welcome"
         android:textFontWeight="700"
+        android:textSize="21sp"
+        android:textColor="@color/guava"
         app:layout_constraintStart_toEndOf="@+id/btn_back"
         app:layout_constraintTop_toBottomOf="@+id/tv_sign_up_photo" />
+
+    <TextView
+        android:id="@+id/name_photo"
+        style="@style/Text.TIX.Heading"
+        android:layout_width="155dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="21dp"
+        android:text="Adhitya Primandhika"
+        android:textFontWeight="700"
+        android:textSize="21sp"
+        android:textColor="@color/darkblue"
+        app:layout_constraintStart_toEndOf="@+id/btn_back"
+        app:layout_constraintTop_toBottomOf="@+id/welcome" />
 
     <ImageView
         android:id="@+id/img_account"

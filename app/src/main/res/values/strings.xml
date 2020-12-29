@@ -18,4 +18,10 @@
     <string name="btn_sign_up">SIGN UP NOW</string>
     <string name="add_photo">Add Photo</string>
     <string name="save_and_next"><![CDATA[SAVE & NEXT]]></string>
+    <string name="welcome">Welcome</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="coming_soon">Coming Soon</string>
+    <string name="profile">Profile</string>
+    <string name="ticket">Ticket</string>
+    <string name="home">Home</string>
 </resources>
