@@ -54,7 +54,7 @@
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
-        android:text="Adhitya Primandhika"
+        tools:text="Adhitya Primandhika"
         android:textFontWeight="700"
         android:textSize="21sp"
         android:textColor="@color/darkblue"

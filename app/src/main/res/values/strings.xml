@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">TIX</string>
-    <string name="now_playing">Now Playing</string>
     <string name="now_playing_detail">Easier to know what movies you can watch</string>
     <string name="btn_next">NEXT</string>
     <string name="btn_skip">SKIP</string>
@@ -24,4 +23,7 @@
     <string name="profile">Profile</string>
     <string name="ticket">Ticket</string>
     <string name="home">Home</string>
+    <string name="synopsis">Synopsis</string>
+    <string name="btn_choose_seat">CHOOSE SEAT</string>
+    <string name="choose_seat">Choose Seat</string>
 </resources>

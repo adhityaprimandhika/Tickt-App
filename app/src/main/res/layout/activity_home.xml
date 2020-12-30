@@ -7,9 +7,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".HomeActivity"
-    android:background="@color/blue">
+    android:background="@color/white">
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:id="@+id/sv_home"
         android:layout_width="match_parent"
         android:layout_height="655dp"
@@ -29,7 +29,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="60dp"
                 android:maxWidth="250dp"
-                android:text="Adhitya Primandhika"
+                tools:text="Adhitya Primandhika"
                 android:textColor="@color/darkblue"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -54,7 +54,7 @@
                 android:layout_marginStart="7dp"
                 android:layout_marginTop="7dp"
                 android:maxWidth="200dp"
-                android:text="IDR 200.000"
+                tools:text="IDR 200.000"
                 android:textColor="@color/darkblue"
                 android:textFontWeight="400"
                 app:layout_constraintEnd_toEndOf="@+id/name_home"
@@ -93,6 +93,9 @@
                 android:layout_marginTop="7dp"
                 android:layout_marginEnd="16dp"
                 android:orientation="horizontal"
+                android:scrollbars="horizontal"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_now_playing" />
@@ -122,7 +125,7 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/tv_coming_soon" />
         </androidx.constraintlayout.widget.ConstraintLayout>
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
     <LinearLayout
         android:id="@+id/linearLayout"
