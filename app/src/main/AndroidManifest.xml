@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TIX">
-        <activity android:name=".ChooseSeatActivity"></activity>
+        <activity android:name=".CheckoutActivity"></activity>
+        <activity android:name=".ChooseSeatActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".SignUpPhotoScreenActivity" />
-        <activity android:name=".SignUpActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".sign.SignUpPhotoScreenActivity" />
+        <activity android:name=".sign.SignUpActivity" />
+        <activity android:name=".sign.LoginActivity" />
         <activity android:name=".onboarding.OnboardingThreeActivity" />
         <activity android:name=".onboarding.OnboardingTwoActivity" />
         <activity android:name=".onboarding.OnboardingOneActivity" />
