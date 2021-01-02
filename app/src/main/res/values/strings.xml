@@ -40,4 +40,9 @@
     <string name="cinema">Cinema</string>
     <string name="seats">Seats</string>
     <string name="e_wallet">E-Wallet</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="btn_save_update"><![CDATA[SAVE & UPDATE]]></string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="your_balance">Your Balance</string>
+    <string name="transaction_history">Transaction History</string>
 </resources>

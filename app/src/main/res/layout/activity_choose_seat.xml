@@ -22,15 +22,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:gravity="center_horizontal"
         android:text="@string/choose_seat"
+        android:textAlignment="center"
         android:textColor="@color/guava"
         android:textSize="24sp"
-        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintHorizontal_bias="0.34"
         app:layout_constraintStart_toEndOf="@+id/btn_back"
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="MissingConstraints" />
@@ -45,9 +45,9 @@
         android:layout_marginEnd="16dp"
         android:gravity="center"
         android:maxWidth="260dp"
+        android:textAlignment="center"
         android:textColor="@color/darkblue"
         android:textSize="18sp"
-        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_sign_up"
@@ -60,8 +60,8 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:src="@drawable/screen"
         android:scaleType="centerInside"
+        android:src="@drawable/screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/movie_title" />
@@ -98,10 +98,10 @@
         android:id="@+id/row_e"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
         android:layout_marginTop="16dp"
-        android:padding="10dp"
         android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_screen">
@@ -111,48 +111,48 @@
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <TextView
+            style="@style/Text.TIX.Heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/Text.TIX.Heading"
-            android:text="E"
-            android:textSize="24sp"
-            android:textColor="@color/darkblue"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textAlignment="center"/>
+            android:text="E"
+            android:textAlignment="center"
+            android:textColor="@color/darkblue"
+            android:textSize="24sp" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/row_d"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:padding="10dp"
-        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/row_e">
@@ -162,48 +162,48 @@
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <TextView
+            style="@style/Text.TIX.Heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/Text.TIX.Heading"
-            android:text="D"
-            android:textSize="24sp"
-            android:textColor="@color/darkblue"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textAlignment="center"/>
+            android:text="D"
+            android:textAlignment="center"
+            android:textColor="@color/darkblue"
+            android:textSize="24sp" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/row_c"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:padding="10dp"
-        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/row_d">
@@ -213,48 +213,48 @@
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <TextView
+            style="@style/Text.TIX.Heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/Text.TIX.Heading"
-            android:text="C"
-            android:textSize="24sp"
-            android:textColor="@color/darkblue"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textAlignment="center"/>
+            android:text="C"
+            android:textAlignment="center"
+            android:textColor="@color/darkblue"
+            android:textSize="24sp" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/row_b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:padding="10dp"
-        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/row_c">
@@ -264,48 +264,48 @@
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <TextView
+            style="@style/Text.TIX.Heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/Text.TIX.Heading"
-            android:text="B"
-            android:textSize="24sp"
-            android:textColor="@color/darkblue"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textAlignment="center"/>
+            android:text="B"
+            android:textAlignment="center"
+            android:textColor="@color/darkblue"
+            android:textSize="24sp" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/row_a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
         android:orientation="horizontal"
         android:padding="10dp"
-        android:gravity="center_horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/row_b">
@@ -315,39 +315,39 @@
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <TextView
+            style="@style/Text.TIX.Heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            style="@style/Text.TIX.Heading"
-            android:text="A"
-            android:textSize="24sp"
-            android:textColor="@color/darkblue"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:textAlignment="center"/>
+            android:text="A"
+            android:textAlignment="center"
+            android:textColor="@color/darkblue"
+            android:textSize="24sp" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
-            android:src="@drawable/shape_rectangle_grey"/>
+            android:src="@drawable/shape_rectangle_grey" />
     </LinearLayout>
 
     <TextView

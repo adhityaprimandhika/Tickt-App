@@ -35,31 +35,21 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
 
-            <ImageView
-                android:id="@+id/wallet"
-                android:layout_width="24dp"
-                android:layout_height="24dp"
-                android:layout_marginStart="16dp"
-                android:layout_marginTop="7dp"
-                android:src="@drawable/ic_wallet_guava"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/name_home"
-                tools:ignore="MissingConstraints" />
-
             <TextView
                 android:id="@+id/balance"
                 style="@style/Text.TIX.Heading"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="7dp"
                 android:layout_marginTop="7dp"
+                android:layout_marginLeft="16dp"
+                android:drawableLeft="@drawable/ic_wallet_guava"
                 android:maxWidth="200dp"
-                tools:text="IDR 200.000"
                 android:textColor="@color/darkblue"
                 android:textFontWeight="400"
                 app:layout_constraintEnd_toEndOf="@+id/name_home"
-                app:layout_constraintStart_toEndOf="@+id/wallet"
-                app:layout_constraintTop_toBottomOf="@+id/name_home" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/name_home"
+                tools:text="IDR 200.000" />
 
             <ImageView
                 android:id="@+id/img_user_home"
@@ -78,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="24dp"
+                android:layout_marginTop="21dp"
                 android:text="@string/now_playing"
                 android:textColor="@color/guava"
                 android:textSize="21sp"
@@ -90,7 +80,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="280dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="7dp"
                 android:layout_marginEnd="16dp"
                 android:orientation="horizontal"
                 android:scrollbars="horizontal"
@@ -106,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="7dp"
                 android:text="@string/coming_soon"
                 android:textColor="@color/guava"
                 android:textSize="21sp"
@@ -118,7 +108,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="280dp"
                 android:layout_marginStart="16dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="7dp"
                 android:layout_marginEnd="16dp"
                 android:orientation="vertical"
                 app:layout_constraintEnd_toEndOf="parent"
