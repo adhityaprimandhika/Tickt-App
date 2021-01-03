@@ -57,7 +57,7 @@
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
-        android:layout_marginBottom="9dp"
+        android:layout_marginBottom="16dp"
         android:text="@string/btn_get_started"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
