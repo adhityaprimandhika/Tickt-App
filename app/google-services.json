@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "729277674263",
+    "project_id": "tix-app-10a27",
+    "storage_bucket": "tix-app-10a27.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:729277674263:android:ea4741cd86f05b2552bd52",
+        "android_client_info": {
+          "package_name": "com.adhityaprimandhika.tix"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "729277674263-01cmgne2nmgal765elup4pfftfg518vn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKXu51wNW9nxBJQ2Plf87lQRIVSFX_-Zk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "729277674263-01cmgne2nmgal765elup4pfftfg518vn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
