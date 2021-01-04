@@ -46,7 +46,7 @@
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/poster"
-        tools:text="Avengers Endgame" />
+        android:text="Avengers Endgame" />
 
     <TextView
         android:id="@+id/genre"
@@ -59,7 +59,7 @@
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/movie_title"
-        tools:text="Action" />
+        android:text="Action" />
 
     <ImageView
         android:id="@+id/star"
@@ -111,7 +111,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_synopsis"
-        tools:text="Continuing Avengers Infinity War, where the incident after Thanos managed to get all the infinity stones and destroy 50% of all living things in the universe. Will the Avengers succeed in defeating Thanos?" />
+        android:text="Continuing Avengers Infinity War, where the incident after Thanos managed to get all the infinity stones and destroy 50% of all living things in the universe. Will the Avengers succeed in defeating Thanos?" />
 
     <TextView
         android:id="@+id/tv_played"

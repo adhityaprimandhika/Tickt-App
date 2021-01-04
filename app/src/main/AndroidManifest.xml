@@ -20,9 +20,9 @@
         <activity android:name=".ChooseSeatActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".sign.SignUpPhotoScreenActivity" />
-        <activity android:name=".sign.SignUpActivity" />
-        <activity android:name=".sign.LoginActivity" />
+        <activity android:name=".sign.signup.SignUpPhotoScreenActivity" />
+        <activity android:name=".sign.signup.SignUpActivity" />
+        <activity android:name=".sign.login.LoginActivity" />
         <activity android:name=".onboarding.OnboardingThreeActivity" />
         <activity android:name=".onboarding.OnboardingTwoActivity" />
         <activity android:name=".onboarding.OnboardingOneActivity" />

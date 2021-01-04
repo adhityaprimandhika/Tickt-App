@@ -29,7 +29,7 @@
                 android:layout_marginStart="16dp"
                 android:layout_marginTop="60dp"
                 android:maxWidth="250dp"
-                tools:text="Adhitya Primandhika"
+                android:text="Adhitya Primandhika"
                 android:textColor="@color/darkblue"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -43,13 +43,14 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="16dp"
                 android:drawableLeft="@drawable/ic_wallet_guava"
+                android:drawablePadding="10dp"
                 android:maxWidth="200dp"
                 android:textColor="@color/darkblue"
                 android:textFontWeight="400"
                 app:layout_constraintEnd_toEndOf="@+id/name_home"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/name_home"
-                tools:text="IDR 200.000" />
+                android:text="IDR 200.000" />
 
             <ImageView
                 android:id="@+id/img_user_home"
