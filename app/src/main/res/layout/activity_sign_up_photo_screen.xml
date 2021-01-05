@@ -77,10 +77,14 @@
         android:id="@+id/add_photo"
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_marginTop="150dp"
         android:src="@drawable/add_photo"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="232dp"
-        tools:layout_editor_absoluteY="422dp" />
+        app:layout_constraintBottom_toBottomOf="@+id/img_account"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.642"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/img_account"
+        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/btn_save_next"

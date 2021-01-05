@@ -32,12 +32,12 @@ class LoginActivity : AppCompatActivity() {
         preference = Preferences(this)
 
         preference.setValues("onboarding", "1")
-        if (preference.getValues("status").equals("1")) {
+        /*if (preference.getValues("status").equals("1")) {
             finishAffinity()
 
             val homeIntent = Intent(this@LoginActivity, HomeActivity::class.java)
             startActivity(homeIntent)
-        }
+        }*/
         val btnLogin: Button = findViewById(R.id.btn_login)
         btnLogin.setOnClickListener {
             iUsername = etUsername.text.toString()
