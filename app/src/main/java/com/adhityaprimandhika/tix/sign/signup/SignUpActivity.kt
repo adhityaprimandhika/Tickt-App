@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
+import com.adhityaprimandhika.tix.HomeActivity
 import com.adhityaprimandhika.tix.R
 import com.adhityaprimandhika.tix.sign.login.User
 import com.google.firebase.database.*
@@ -74,15 +75,17 @@ class SignUpActivity : AppCompatActivity() {
         mFirebaseReference.child(sUsername).addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 var user = dataSnapshot.getValue(User::class.java)
-
-                if (user == null) {
+                var checkDone : Boolean = false
+                if (user == null && checkDone == false) {
                     mFirebaseReference.child(sUsername).setValue(data)
 
                     var addPhotoIntent = Intent(this@SignUpActivity, SignUpPhotoScreenActivity::class.java).putExtra("name",
                         data.name
                     )
                     startActivity(addPhotoIntent)
-                }else {
+                    checkDone = true
+                    Toast.makeText(this@SignUpActivity, "Sign Up Succeed", Toast.LENGTH_LONG).show()
+                }else if (user != null && checkDone == true){
                     Toast.makeText(this@SignUpActivity, "Username have been taken", Toast.LENGTH_LONG).show()
                 }
             }

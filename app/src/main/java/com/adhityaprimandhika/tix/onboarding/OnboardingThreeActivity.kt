@@ -10,14 +10,14 @@ import com.adhityaprimandhika.tix.utils.Preferences
 
 class OnboardingThreeActivity : AppCompatActivity() {
 
-    private lateinit var preference : Preferences
+    private lateinit var preferences : Preferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboarding_three)
 
-        preference = Preferences(this)
-        if (preference.getValues("onboarding").equals("1")) {
+        preferences = Preferences(this)
+        if (preferences.getValues("onboarding").equals("1")) {
             finishAffinity()
 
             val getStartedIntent = Intent(this@OnboardingThreeActivity, LoginActivity::class.java)
@@ -25,7 +25,7 @@ class OnboardingThreeActivity : AppCompatActivity() {
         }
         val btnGetStarted : Button = findViewById(R.id.btn_get_started)
         btnGetStarted.setOnClickListener {
-            preference.setValues("onboarding", "1")
+            preferences.setValues("onboarding", "1")
             finishAffinity()
 
             val getStartedIntent = Intent(this@OnboardingThreeActivity, LoginActivity::class.java)

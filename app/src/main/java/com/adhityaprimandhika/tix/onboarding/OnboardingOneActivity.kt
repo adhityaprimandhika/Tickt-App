@@ -13,14 +13,14 @@ import com.adhityaprimandhika.tix.utils.Preferences
 
 class OnboardingOneActivity : AppCompatActivity(), View.OnClickListener {
 
-    private lateinit var preference : Preferences
+    private lateinit var preferences : Preferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_onboarding_one)
 
-        preference = Preferences(this)
-        if (preference.getValues("onboarding").equals("1")) {
+        preferences = Preferences(this)
+        if (preferences.getValues("onboarding").equals("1")) {
             finishAffinity()
 
             val nextIntent = Intent(this@OnboardingOneActivity, OnboardingTwoActivity::class.java)
@@ -40,7 +40,7 @@ class OnboardingOneActivity : AppCompatActivity(), View.OnClickListener {
                 startActivity(nextIntent)
             }
             R.id.btn_skip->{
-                preference.setValues("onboarding", "1")
+                preferences.setValues("onboarding", "1")
                 finishAffinity()
 
                 val skipIntent = Intent(this@OnboardingOneActivity, LoginActivity::class.java)
