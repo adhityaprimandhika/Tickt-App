@@ -11,7 +11,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.adhityaprimandhika.tix.HomeActivity
+import com.adhityaprimandhika.tix.home.HomeActivity
 import com.adhityaprimandhika.tix.R
 import com.adhityaprimandhika.tix.R.drawable
 import com.adhityaprimandhika.tix.utils.Preferences

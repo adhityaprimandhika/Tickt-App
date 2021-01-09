@@ -6,7 +6,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.adhityaprimandhika.tix.HomeActivity
+import com.adhityaprimandhika.tix.home.HomeActivity
 import com.adhityaprimandhika.tix.R
 import com.adhityaprimandhika.tix.sign.signup.SignUpActivity
 import com.adhityaprimandhika.tix.utils.Preferences
@@ -26,6 +26,8 @@ class LoginActivity : AppCompatActivity() {
 
         val etUsername : EditText = findViewById(R.id.et_username_login)
         val etPassword : EditText = findViewById(R.id.et_password_login)
+        val btnLogin: Button = findViewById(R.id.btn_login)
+        val btnCreateAccount: Button = findViewById(R.id.btn_create_account)
 
         mDatabase = FirebaseDatabase.getInstance().getReference("User")
         preferences = Preferences(this)
@@ -37,7 +39,7 @@ class LoginActivity : AppCompatActivity() {
             val homeIntent = Intent(this@LoginActivity, HomeActivity::class.java)
             startActivity(homeIntent)
         }*/
-        val btnLogin: Button = findViewById(R.id.btn_login)
+
         btnLogin.setOnClickListener {
             iUsername = etUsername.text.toString()
             iPassword = etPassword.text.toString()
@@ -53,7 +55,6 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
-        val btnCreateAccount: Button = findViewById(R.id.btn_create_account)
         btnCreateAccount.setOnClickListener {
             val signUpIntent = Intent(this@LoginActivity, SignUpActivity::class.java)
             startActivity(signUpIntent)

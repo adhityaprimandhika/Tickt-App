@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import com.adhityaprimandhika.tix.HomeActivity
 import com.adhityaprimandhika.tix.R
 import com.adhityaprimandhika.tix.sign.login.User
 import com.google.firebase.database.*
@@ -30,12 +29,12 @@ class SignUpActivity : AppCompatActivity() {
         val etName : EditText = findViewById(R.id.et_name_sign_up)
         val etEmail : EditText = findViewById(R.id.et_email_sign_up)
         val etPassword : EditText = findViewById(R.id.et_password_sign_up)
+        val btnSignUp : Button = findViewById(R.id.btn_sign_up)
 
         mFirebaseInstance = FirebaseDatabase.getInstance()
         mDatabase = FirebaseDatabase.getInstance().getReference()
         mFirebaseReference = mFirebaseInstance.getReference("User")
 
-        val btnSignUp : Button = findViewById(R.id.btn_sign_up)
         btnSignUp.setOnClickListener {
             sUsername = etUsername.text.toString()
             sName = etName.text.toString()

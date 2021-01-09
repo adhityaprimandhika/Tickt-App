@@ -27,7 +27,7 @@
         <activity android:name=".CheckoutActivity" />
         <activity android:name=".ChooseSeatActivity" />
         <activity android:name=".DetailActivity" />
-        <activity android:name=".HomeActivity" />
+        <activity android:name=".home.HomeActivity" />
         <activity android:name=".sign.signup.SignUpPhotoScreenActivity" />
         <activity android:name=".sign.signup.SignUpActivity" />
         <activity android:name=".sign.login.LoginActivity" />
