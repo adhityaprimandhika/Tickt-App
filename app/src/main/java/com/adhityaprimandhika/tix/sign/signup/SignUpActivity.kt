@@ -64,6 +64,7 @@ class SignUpActivity : AppCompatActivity() {
         user.name = sName
         user.email = sEmail
         user.password = sPassword
+        user.balance = 0.toString()
 
         if (sUsername != null) {
             checkUsername(sUsername, user)

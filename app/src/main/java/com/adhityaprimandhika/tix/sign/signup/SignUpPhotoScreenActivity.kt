@@ -74,7 +74,7 @@ class SignUpPhotoScreenActivity : AppCompatActivity(){
         btnSave.setOnClickListener {
             if (filePath != null) {
                 var progressDialog = ProgressDialog(this)
-                progressDialog.setTitle("Uploding...")
+                progressDialog.setTitle("Uploading...")
                 progressDialog.show()
 
                 var ref = storageReference.child("images/" + UUID.randomUUID().toString())

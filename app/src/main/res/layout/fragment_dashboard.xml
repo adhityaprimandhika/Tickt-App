@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/shape_rectangle_white"
-    tools:context=".home.DashboardFragment">
+    tools:context=".home.dashboard.DashboardFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
@@ -19,7 +19,7 @@
             android:layout_marginStart="16dp"
             android:layout_marginTop="60dp"
             android:maxWidth="250dp"
-            android:text="Adhitya Primandhika"
+            tools:text="Adhitya Primandhika"
             android:textColor="@color/darkblue"
             android:textSize="18sp"
             app:layout_constraintStart_toStartOf="parent"
@@ -35,7 +35,7 @@
             android:drawableLeft="@drawable/ic_wallet_guava"
             android:drawablePadding="10dp"
             android:maxWidth="200dp"
-            android:text="IDR 200.000"
+            tools:text="IDR 200.000"
             android:textColor="@color/darkblue"
             android:textFontWeight="400"
             app:layout_constraintEnd_toEndOf="@+id/name_home"
