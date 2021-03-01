@@ -24,8 +24,8 @@
         <activity android:name=".HistoryActivity"></activity>
         <activity android:name=".MyWalletActivity" />
         <activity android:name=".EditProfileActivity" />
-        <activity android:name=".CheckoutActivity" />
-        <activity android:name=".ChooseSeatActivity" />
+        <activity android:name=".checkout.CheckoutActivity" />
+        <activity android:name=".checkout.ChooseSeatActivity" />
         <activity android:name=".DetailActivity" />
         <activity android:name=".home.HomeActivity" />
         <activity android:name=".sign.signup.SignUpPhotoScreenActivity" />

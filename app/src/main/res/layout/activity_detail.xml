@@ -7,7 +7,7 @@
     tools:context=".DetailActivity">
 
     <ImageView
-        android:id="@+id/poster"
+        android:id="@+id/movie_poster"
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:scaleType="centerCrop"
@@ -45,11 +45,11 @@
         android:textColor="@color/darkblue"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/poster"
+        app:layout_constraintTop_toBottomOf="@+id/movie_poster"
         android:text="Avengers Endgame" />
 
     <TextView
-        android:id="@+id/genre"
+        android:id="@+id/movie_genre"
         style="@style/Text.TIX.Normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -67,22 +67,23 @@
         android:layout_height="25dp"
         android:layout_marginTop="16dp"
         android:src="@drawable/ic_star"
-        app:layout_constraintEnd_toStartOf="@+id/rating"
-        app:layout_constraintTop_toBottomOf="@+id/poster" />
+        app:layout_constraintEnd_toStartOf="@+id/movie_rating"
+        app:layout_constraintTop_toBottomOf="@+id/movie_poster" />
 
     <TextView
-        android:id="@+id/rating"
+        android:id="@+id/movie_rating"
         style="@style/Text.TIX.Heading"
         android:layout_width="34dp"
         android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
         android:layout_marginEnd="16dp"
-        android:textSize="16sp"
-        android:textColor="@color/darkblue"
         android:textAlignment="center"
+        android:textColor="@color/darkblue"
+        android:textSize="16sp"
         app:layout_constraintEnd_toEndOf="parent"
-        tools:layout_editor_absoluteY="267dp"
-        tools:text="9.0"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintTop_toBottomOf="@+id/movie_poster"
+        tools:ignore="MissingConstraints"
+        tools:text="9.0" />
 
     <TextView
         android:id="@+id/tv_synopsis"
@@ -95,10 +96,10 @@
         android:textColor="@color/guava"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/genre" />
+        app:layout_constraintTop_toBottomOf="@+id/movie_genre" />
 
     <TextView
-        android:id="@+id/synopsis"
+        android:id="@+id/movie_synopsis"
         style="@style/Text.TIX.Normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -111,7 +112,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tv_synopsis"
-        android:text="Continuing Avengers Infinity War, where the incident after Thanos managed to get all the infinity stones and destroy 50% of all living things in the universe. Will the Avengers succeed in defeating Thanos?" />
+        tools:text="Continuing Avengers Infinity War, where the incident after Thanos managed to get all the infinity stones and destroy 50% of all living things in the universe. Will the Avengers succeed in defeating Thanos?" />
 
     <TextView
         android:id="@+id/tv_played"
@@ -124,13 +125,15 @@
         android:textColor="@color/guava"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/synopsis" />
+        app:layout_constraintTop_toBottomOf="@+id/movie_synopsis" />
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_actors"
         android:layout_width="match_parent"
         android:layout_height="63dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
+        android:layout_marginBottom="8dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

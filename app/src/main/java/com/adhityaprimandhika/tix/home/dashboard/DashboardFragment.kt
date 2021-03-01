@@ -1,5 +1,6 @@
 package com.adhityaprimandhika.tix.home.dashboard
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -10,6 +11,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.adhityaprimandhika.tix.DetailActivity
 import com.adhityaprimandhika.tix.R
 import com.adhityaprimandhika.tix.model.Film
 import com.adhityaprimandhika.tix.utils.Preferences
@@ -89,11 +91,13 @@ class DashboardFragment : Fragment() {
                 }
 
                 rvNowPlaying.adapter = NowPlayingAdapter(dataList) {
-
+                    var intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
+                    startActivity(intent)
                 }
 
                 rvComingSoon.adapter = ComingSoonAdapter(dataList) {
-
+                    var intent = Intent(context, DetailActivity::class.java).putExtra("data", it)
+                    startActivity(intent)
                 }
             }
 

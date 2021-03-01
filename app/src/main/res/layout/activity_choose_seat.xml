@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ChooseSeatActivity">
+    tools:context=".checkout.ChooseSeatActivity">
 
     <ImageView
         android:id="@+id/btn_back"
@@ -90,6 +90,8 @@
         android:layout_marginBottom="16dp"
         android:text="@string/btn_buy_ticket"
         android:textSize="18sp"
+        android:visibility="invisible"
+        tools:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -107,6 +109,7 @@
         app:layout_constraintTop_toBottomOf="@+id/tv_screen">
 
         <ImageView
+            android:id="@+id/e1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -114,6 +117,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
+            android:id="@+id/e2"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -132,6 +136,7 @@
             android:textSize="24sp" />
 
         <ImageView
+            android:id="@+id/e3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -139,6 +144,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
+            android:id="@+id/e4"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -158,6 +164,7 @@
         app:layout_constraintTop_toBottomOf="@+id/row_e">
 
         <ImageView
+            android:id="@+id/d1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -165,6 +172,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
+            android:id="@+id/d2"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -183,6 +191,7 @@
             android:textSize="24sp" />
 
         <ImageView
+            android:id="@+id/d3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -190,6 +199,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
+            android:id="@+id/d4"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -209,6 +219,7 @@
         app:layout_constraintTop_toBottomOf="@+id/row_d">
 
         <ImageView
+            android:id="@+id/c1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -216,6 +227,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
+            android:id="@+id/c2"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -234,6 +246,7 @@
             android:textSize="24sp" />
 
         <ImageView
+            android:id="@+id/c3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -241,6 +254,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
+            android:id="@+id/c4"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -260,6 +274,7 @@
         app:layout_constraintTop_toBottomOf="@+id/row_c">
 
         <ImageView
+            android:id="@+id/b1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -267,6 +282,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
+            android:id="@+id/b2"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -285,6 +301,7 @@
             android:textSize="24sp" />
 
         <ImageView
+            android:id="@+id/b3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -292,6 +309,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
+            android:id="@+id/b4"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -311,6 +329,7 @@
         app:layout_constraintTop_toBottomOf="@+id/row_b">
 
         <ImageView
+            android:id="@+id/a1"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -318,6 +337,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
+            android:id="@+id/a2"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -336,6 +356,7 @@
             android:textSize="24sp" />
 
         <ImageView
+            android:id="@+id/a3"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
@@ -343,6 +364,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <ImageView
+            android:id="@+id/a4"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:layout_marginLeft="20dp"
