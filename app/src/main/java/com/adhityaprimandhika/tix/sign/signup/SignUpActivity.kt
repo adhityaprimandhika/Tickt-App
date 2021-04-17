@@ -8,6 +8,7 @@ import android.widget.EditText
 import android.widget.Toast
 import com.adhityaprimandhika.tix.R
 import com.adhityaprimandhika.tix.sign.login.User
+import com.adhityaprimandhika.tix.utils.Preferences
 import com.google.firebase.database.*
 
 class SignUpActivity : AppCompatActivity() {
@@ -20,6 +21,7 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var mFirebaseReference : DatabaseReference
     private lateinit var mFirebaseInstance : FirebaseDatabase
     private lateinit var mDatabase : DatabaseReference
+    private lateinit var preferences : Preferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,6 +36,7 @@ class SignUpActivity : AppCompatActivity() {
         mFirebaseInstance = FirebaseDatabase.getInstance()
         mDatabase = FirebaseDatabase.getInstance().getReference()
         mFirebaseReference = mFirebaseInstance.getReference("User")
+        preferences = Preferences(this)
 
         btnSignUp.setOnClickListener {
             sUsername = etUsername.text.toString()
@@ -79,9 +82,14 @@ class SignUpActivity : AppCompatActivity() {
                 if (user == null && checkDone == false) {
                     mFirebaseReference.child(sUsername).setValue(data)
 
-                    var addPhotoIntent = Intent(this@SignUpActivity, SignUpPhotoScreenActivity::class.java).putExtra("name",
-                        data.name
-                    )
+                    preferences.setValues("name", data.name.toString())
+                    preferences.setValues("user", data.username.toString())
+                    preferences.setValues("balance", "")
+                    preferences.setValues("url", "")
+                    preferences.setValues("email", data.email.toString())
+                    preferences.setValues("status", "1")
+
+                    var addPhotoIntent = Intent(this@SignUpActivity, SignUpPhotoScreenActivity::class.java).putExtra("data", data)
                     startActivity(addPhotoIntent)
                     checkDone = true
                     Toast.makeText(this@SignUpActivity, "Sign Up Succeed", Toast.LENGTH_LONG).show()

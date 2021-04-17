@@ -21,8 +21,9 @@ import com.github.dhaval2404.imagepicker.ImagePicker
 import com.google.firebase.storage.FirebaseStorage
 import com.google.firebase.storage.StorageReference
 import java.util.*
+import com.adhityaprimandhika.tix.sign.login.User
+import com.google.firebase.database.*
 
-@Suppress("DEPRECATION")
 class SignUpPhotoScreenActivity : AppCompatActivity(){
 
     var statusAdd : Boolean = false
@@ -30,6 +31,10 @@ class SignUpPhotoScreenActivity : AppCompatActivity(){
 
     private lateinit var storage : FirebaseStorage
     private lateinit var storageReference : StorageReference
+
+    lateinit var user : User
+    private lateinit var mFirebaseReference : DatabaseReference
+    private lateinit var mFirebaseInstance : FirebaseDatabase
     private lateinit var preferences : Preferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,6 +44,10 @@ class SignUpPhotoScreenActivity : AppCompatActivity(){
         preferences = Preferences(this)
         storage = FirebaseStorage.getInstance()
         storageReference = storage.getReference()
+        mFirebaseInstance = FirebaseDatabase.getInstance()
+        mFirebaseReference = mFirebaseInstance.getReference("User")
+
+        user = intent.getParcelableExtra("data")!!
 
         val imgAccount : ImageView = findViewById(R.id.img_account)
         val btnSave : Button = findViewById(R.id.btn_save_next)
@@ -84,13 +93,8 @@ class SignUpPhotoScreenActivity : AppCompatActivity(){
                         Toast.makeText(this, "Uploaded", Toast.LENGTH_LONG).show()
 
                         ref.downloadUrl.addOnSuccessListener {
-                            preferences.setValues("url", it.toString())
+                            saveToFirebase(it.toString())
                         }
-
-                        finishAffinity()
-
-                        val homeIntent = Intent(this@SignUpPhotoScreenActivity, HomeActivity::class.java)
-                        startActivity(homeIntent)
                     }
                     .addOnFailureListener { e ->
                         progressDialog.dismiss()
@@ -102,6 +106,33 @@ class SignUpPhotoScreenActivity : AppCompatActivity(){
                     }
             }
         }
+    }
+
+    private fun saveToFirebase(url: String) {
+        mFirebaseReference.child(user.username!!).addValueEventListener(object :
+            ValueEventListener {
+            override fun onDataChange(dataSnapshot : DataSnapshot) {
+                user.url = url
+                mFirebaseReference.child(user.username!!).setValue(user)
+
+                preferences.setValues("name", user.name.toString())
+                preferences.setValues("user", user.username.toString())
+                preferences.setValues("balance", "")
+                preferences.setValues("url", "")
+                preferences.setValues("email", user.email.toString())
+                preferences.setValues("status", "1")
+                preferences.setValues("url", url)
+
+                finishAffinity()
+
+                val homeIntent = Intent(this@SignUpPhotoScreenActivity, HomeActivity::class.java)
+                startActivity(homeIntent)
+            }
+
+            override fun onCancelled(error : DatabaseError) {
+                Toast.makeText(this@SignUpPhotoScreenActivity, ""+error.message, Toast.LENGTH_LONG).show()
+            }
+        })
     }
 
     override fun onBackPressed() {
