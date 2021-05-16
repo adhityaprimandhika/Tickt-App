@@ -1,40 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.adhityaprimandhika.tix">
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission-sdk-23 android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE"/>
-    <uses-permission android:name="android.permission.CAMERA"/>
-    <uses-permission-sdk-23 android:name="android.permission.CAMERA"/>
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
-    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    package="com.adhityaprimandhika.tickt">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission-sdk-23 android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission-sdk-23 android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission-sdk-23 android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <uses-feature
         android:name="android.hardware.camera"
-        android:required="true"/>
-    
+        android:required="true" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TIX">
-        <activity android:name=".HistoryActivity"></activity>
-        <activity android:name=".MyWalletActivity" />
-        <activity android:name=".EditProfileActivity" />
-        <activity android:name=".checkout.CheckoutActivity" />
-        <activity android:name=".checkout.ChooseSeatActivity" />
-        <activity android:name=".DetailActivity" />
-        <activity android:name=".home.HomeActivity" />
-        <activity android:name=".sign.signup.SignUpPhotoScreenActivity" />
-        <activity android:name=".sign.signup.SignUpActivity" />
-        <activity android:name=".sign.login.LoginActivity" />
-        <activity android:name=".onboarding.OnboardingThreeActivity" />
-        <activity android:name=".onboarding.OnboardingTwoActivity" />
-        <activity android:name=".onboarding.OnboardingOneActivity" />
-        <activity android:name=".SplashScreenActivity">
+        android:theme="@style/Theme.TICKT">
+        <activity android:name="com.adhityaprimandhika.tickt.checkout.CheckoutSuccessActivity"></activity>
+        <activity android:name="com.adhityaprimandhika.tickt.HistoryActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.MyWalletActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.EditProfileActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.checkout.CheckoutActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.checkout.ChooseSeatActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.DetailActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.home.HomeActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.sign.signup.SignUpPhotoScreenActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.sign.signup.SignUpActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.sign.login.LoginActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.onboarding.OnboardingThreeActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.onboarding.OnboardingTwoActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.onboarding.OnboardingOneActivity" />
+        <activity android:name="com.adhityaprimandhika.tickt.SplashScreenActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

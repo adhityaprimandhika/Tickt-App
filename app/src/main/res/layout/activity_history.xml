@@ -18,7 +18,7 @@
 
     <TextView
         android:id="@+id/tv_history"
-        style="@style/Text.TIX.Heading"
+        style="@style/Text.TICKT.Heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -36,7 +36,7 @@
 
     <TextView
         android:id="@+id/tv_movie"
-        style="@style/Text.TIX.Heading"
+        style="@style/Text.TICKT.Heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

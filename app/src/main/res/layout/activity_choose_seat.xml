@@ -18,7 +18,7 @@
 
     <TextView
         android:id="@+id/tv_sign_up"
-        style="@style/Text.TIX.Heading"
+        style="@style/Text.TICKT.Heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -37,7 +37,7 @@
 
     <TextView
         android:id="@+id/movie_title"
-        style="@style/Text.TIX.Heading"
+        style="@style/Text.TICKT.Heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -68,7 +68,7 @@
 
     <TextView
         android:id="@+id/tv_screen"
-        style="@style/Text.TIX.Normal"
+        style="@style/Text.TICKT.Normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -82,7 +82,7 @@
 
     <Button
         android:id="@+id/btn_buy_ticket"
-        style="@style/Widget.TIX.ButtonPrimary"
+        style="@style/Widget.TICKT.ButtonPrimary"
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
@@ -125,7 +125,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <TextView
-            style="@style/Text.TIX.Heading"
+            style="@style/Text.TICKT.Heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -180,7 +180,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <TextView
-            style="@style/Text.TIX.Heading"
+            style="@style/Text.TICKT.Heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -235,7 +235,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <TextView
-            style="@style/Text.TIX.Heading"
+            style="@style/Text.TICKT.Heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -290,7 +290,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <TextView
-            style="@style/Text.TIX.Heading"
+            style="@style/Text.TICKT.Heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -345,7 +345,7 @@
             android:src="@drawable/shape_rectangle_grey" />
 
         <TextView
-            style="@style/Text.TIX.Heading"
+            style="@style/Text.TICKT.Heading"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -374,7 +374,7 @@
 
     <TextView
         android:id="@+id/empty"
-        style="@style/Text.TIX.Normal"
+        style="@style/Text.TICKT.Normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -389,7 +389,7 @@
 
     <TextView
         android:id="@+id/booked"
-        style="@style/Text.TIX.Normal"
+        style="@style/Text.TICKT.Normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -404,7 +404,7 @@
 
     <TextView
         android:id="@+id/yours"
-        style="@style/Text.TIX.Normal"
+        style="@style/Text.TICKT.Normal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

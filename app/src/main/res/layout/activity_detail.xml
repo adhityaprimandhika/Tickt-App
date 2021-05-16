@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,15 +15,139 @@
         tools:ignore="MissingConstraints"
         tools:src="@drawable/poster_detail" />
 
-    <ImageView
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sv_movie"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="44dp"
-        android:layout_marginBottom="8dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/gradient"
-        app:layout_constraintBottom_toTopOf="@+id/movie_title"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/movie_poster"
+        android:background="@drawable/shape_rectangle_white">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/gradient"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_marginBottom="8dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/gradient"
+                app:layout_constraintBottom_toTopOf="@+id/movie_title"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/movie_title"
+                style="@style/Text.TICKT.Heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:maxWidth="260dp"
+                android:textColor="@color/darkblue"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gradient"
+                android:text="Avengers Endgame" />
+
+            <TextView
+                android:id="@+id/movie_genre"
+                style="@style/Text.TICKT.Normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:textColor="@color/blue"
+                android:textFontWeight="500"
+                android:textSize="16sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movie_title"
+                android:text="Action" />
+
+            <ImageView
+                android:id="@+id/star"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/ic_star"
+                app:layout_constraintEnd_toStartOf="@+id/movie_rating"
+                app:layout_constraintTop_toBottomOf="@+id/gradient" />
+
+            <TextView
+                android:id="@+id/movie_rating"
+                style="@style/Text.TICKT.Heading"
+                android:layout_width="34dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginEnd="16dp"
+                android:textAlignment="center"
+                android:textColor="@color/darkblue"
+                android:textSize="16sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gradient"
+                tools:ignore="MissingConstraints"
+                tools:text="9.0" />
+
+            <TextView
+                android:id="@+id/tv_synopsis"
+                style="@style/Text.TICKT.Heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/synopsis"
+                android:textColor="@color/guava"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movie_genre" />
+
+            <TextView
+                android:id="@+id/movie_synopsis"
+                style="@style/Text.TICKT.Normal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:maxHeight="200dp"
+                android:textColor="@color/blue"
+                android:textFontWeight="500"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_synopsis"
+                tools:text="Continuing Avengers Infinity War, where the incident after Thanos managed to get all the infinity stones and destroy 50% of all living things in the universe. Will the Avengers succeed in defeating Thanos?" />
+
+            <TextView
+                android:id="@+id/tv_played"
+                style="@style/Text.TICKT.Heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/tv_who_played"
+                android:textColor="@color/guava"
+                android:textSize="18sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/movie_synopsis" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_actors"
+                android:layout_width="match_parent"
+                android:layout_height="65dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="8dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_played" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 
     <ImageView
         android:id="@+id/btn_back"
@@ -34,114 +159,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/movie_title"
-        style="@style/Text.TIX.Heading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:layout_marginTop="8dp"
-        android:maxWidth="260dp"
-        android:textColor="@color/darkblue"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/movie_poster"
-        android:text="Avengers Endgame" />
-
-    <TextView
-        android:id="@+id/movie_genre"
-        style="@style/Text.TIX.Normal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="16dp"
-        android:textColor="@color/blue"
-        android:textFontWeight="500"
-        android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/movie_title"
-        android:text="Action" />
-
-    <ImageView
-        android:id="@+id/star"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginTop="16dp"
-        android:src="@drawable/ic_star"
-        app:layout_constraintEnd_toStartOf="@+id/movie_rating"
-        app:layout_constraintTop_toBottomOf="@+id/movie_poster" />
-
-    <TextView
-        android:id="@+id/movie_rating"
-        style="@style/Text.TIX.Heading"
-        android:layout_width="34dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="17dp"
-        android:layout_marginEnd="16dp"
-        android:textAlignment="center"
-        android:textColor="@color/darkblue"
-        android:textSize="16sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/movie_poster"
-        tools:ignore="MissingConstraints"
-        tools:text="9.0" />
-
-    <TextView
-        android:id="@+id/tv_synopsis"
-        style="@style/Text.TIX.Heading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/synopsis"
-        android:textColor="@color/guava"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/movie_genre" />
-
-    <TextView
-        android:id="@+id/movie_synopsis"
-        style="@style/Text.TIX.Normal"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
-        android:maxHeight="200dp"
-        android:textColor="@color/blue"
-        android:textFontWeight="500"
-        android:textSize="14sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_synopsis"
-        tools:text="Continuing Avengers Infinity War, where the incident after Thanos managed to get all the infinity stones and destroy 50% of all living things in the universe. Will the Avengers succeed in defeating Thanos?" />
-
-    <TextView
-        android:id="@+id/tv_played"
-        style="@style/Text.TIX.Heading"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:text="@string/tv_who_played"
-        android:textColor="@color/guava"
-        android:textSize="18sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/movie_synopsis" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_actors"
-        android:layout_width="match_parent"
-        android:layout_height="63dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
-        android:layout_marginBottom="8dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_played" />
-
     <Button
         android:id="@+id/btn_choose_seat"
-        style="@style/Widget.TIX.ButtonPrimary"
+        style="@style/Widget.TICKT.ButtonPrimary"
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"

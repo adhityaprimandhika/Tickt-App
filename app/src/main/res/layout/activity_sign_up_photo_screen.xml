@@ -18,7 +18,7 @@
 
     <TextView
         android:id="@+id/tv_sign_up_photo"
-        style="@style/Text.TIX.Heading"
+        style="@style/Text.TICKT.Heading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -36,7 +36,7 @@
 
     <TextView
         android:id="@+id/welcome"
-        style="@style/Text.TIX.Heading"
+        style="@style/Text.TICKT.Heading"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
@@ -50,7 +50,7 @@
 
     <TextView
         android:id="@+id/name_photo"
-        style="@style/Text.TIX.Heading"
+        style="@style/Text.TICKT.Heading"
         android:layout_width="155dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="21dp"
@@ -88,7 +88,7 @@
 
     <Button
         android:id="@+id/btn_save_next"
-        style="@style/Widget.TIX.ButtonPrimary"
+        style="@style/Widget.TICKT.ButtonPrimary"
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
@@ -103,7 +103,7 @@
 
     <Button
         android:id="@+id/btn_skip"
-        style="@style/Widget.TIX.ButtonSecondary"
+        style="@style/Widget.TICKT.ButtonSecondary"
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"

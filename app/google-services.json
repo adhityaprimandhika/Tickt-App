@@ -1,15 +1,16 @@
 {
   "project_info": {
     "project_number": "729277674263",
+    "firebase_url": "https://tix-app-10a27-default-rtdb.firebaseio.com",
     "project_id": "tix-app-10a27",
     "storage_bucket": "tix-app-10a27.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:729277674263:android:ea4741cd86f05b2552bd52",
+        "mobilesdk_app_id": "1:729277674263:android:a102d263f8ce40da52bd52",
         "android_client_info": {
-          "package_name": "com.adhityaprimandhika.tix"
+          "package_name": "com.adhityaprimandhika.tickt"
         }
       },
       "oauth_client": [

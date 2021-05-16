@@ -9,19 +9,19 @@
 
     <ImageView
         android:id="@+id/logo"
-        android:layout_width="115dp"
-        android:layout_height="60dp"
+        android:layout_width="155dp"
+        android:layout_height="100dp"
         android:layout_marginStart="123dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="123dp"
-        android:src="@drawable/logo_tix"
+        android:src="@drawable/logo_tickt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tv_login"
-        style="@style/Text.TIX.Heading"
+        style="@style/Text.TICKT.Heading"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -36,7 +36,7 @@
 
     <TextView
         android:id="@+id/tv_username"
-        style="@style/Text.TIX.Heading"
+        style="@style/Text.TICKT.Heading"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -52,7 +52,7 @@
 
     <EditText
         android:id="@+id/et_username_login"
-        style="@style/Text.TIX.Normal"
+        style="@style/Text.TICKT.Normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -69,7 +69,7 @@
 
     <TextView
         android:id="@+id/tv_password"
-        style="@style/Text.TIX.Heading"
+        style="@style/Text.TICKT.Heading"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -85,7 +85,7 @@
 
     <EditText
         android:id="@+id/et_password_login"
-        style="@style/Text.TIX.Normal"
+        style="@style/Text.TICKT.Normal"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -102,7 +102,7 @@
 
     <Button
         android:id="@+id/btn_login"
-        style="@style/Widget.TIX.ButtonPrimary"
+        style="@style/Widget.TICKT.ButtonPrimary"
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"
@@ -116,7 +116,7 @@
 
     <Button
         android:id="@+id/btn_create_account"
-        style="@style/Widget.TIX.ButtonSecondary"
+        style="@style/Widget.TICKT.ButtonSecondary"
         android:layout_width="0dp"
         android:layout_height="52dp"
         android:layout_marginStart="16dp"

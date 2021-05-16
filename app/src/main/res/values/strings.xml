@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TIX</string>
+    <string name="app_name">TICKT</string>
     <string name="now_playing_detail">Easier to know what movies you can watch</string>
     <string name="btn_next">NEXT</string>
     <string name="btn_skip">SKIP</string>
@@ -46,6 +46,7 @@
     <string name="your_balance">Your Balance</string>
     <string name="transaction_history">Transaction History</string>
     <string name="history">History</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="btn_home">Home</string>
+    <string name="btn_see_tickets">See the ticket(s)</string>
+    <string name="hello_blank_fragment" />
 </resources>

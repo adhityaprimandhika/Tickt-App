@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.TIX" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.TICKT" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
         <item name="colorPrimary">@color/guava</item>
         <item name="colorPrimaryVariant">@color/darkguava</item>
@@ -19,17 +19,24 @@
         <item name="windowNoTitle">true</item>
     </style>
 
-    <style name="Widget.TIX.ButtonPrimary" parent="Widget.MaterialComponents.Button">
+    <style name="Widget.TICKT.ButtonPrimary" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">?attr/colorPrimary</item>
         <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
-        <item name="textAppearanceButton">@style/Text.TIX.Heading</item>
+        <item name="textAppearanceButton">@style/Text.TICKT.Heading</item>
 
     </style>
 
-    <style name="Widget.TIX.ButtonSecondary" parent="Widget.MaterialComponents.Button">
+    <style name="Widget.TICKT.ButtonPrimaryBlue" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">?attr/colorSecondaryVariant</item>
+        <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
+        <item name="textAppearanceButton">@style/Text.TICKT.Heading</item>
+
+    </style>
+
+    <style name="Widget.TICKT.ButtonSecondary" parent="Widget.MaterialComponents.Button">
         <item name="backgroundTint">?attr/colorAccent</item>
         <item name="shapeAppearance">@style/ShapeAppearance.App.SmallComponent</item>
-        <item name="textAppearanceButton">@style/Text.TIX.Heading</item>
+        <item name="textAppearanceButton">@style/Text.TICKT.Heading</item>
     </style>
 
     <style name="ShapeAppearance.App.SmallComponent" parent="ShapeAppearance.MaterialComponents.SmallComponent">
@@ -37,16 +44,16 @@
         <item name="cornerSize">20dp</item>
     </style>
 
-    <style name="Text.TIX" parent="TextAppearance.AppCompat">
+    <style name="Text.TICKT" parent="TextAppearance.AppCompat">
         <item name="android:fontFamily">@font/montserrat</item>
     </style>
 
-    <style name="Text.TIX.Heading">
+    <style name="Text.TICKT.Heading">
         <item name="fontWeight">600</item>
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="Text.TIX.Normal">
+    <style name="Text.TICKT.Normal">
         <item name="fontWeight">400</item>
         <item name="android:textStyle">normal</item>
     </style>
